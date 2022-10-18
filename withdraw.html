@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>withdraw</title>
+   
+ <link rel="stylesheet" href="/css/withdraw.css">
+</head>
+<body>
+   
+    <a href="/html/home.html" id="home">Home</a>
+<div class="container">
+    <policy id="policyM" class="policy" >
+       you agree that all transactions is made and initiate by you and any incorrect details is at your risk which may leads to loss of capital and so on , webSport will not entertain any mistakes made by the user as a matter of fact
+        <button onclick="removePolicy()">ok</button>
+    </policy>
+
+
+
+
+
+
+    <h1>
+        withdraw<span> cash</span>
+    </h1>
+
+    <form id="form">
+        <span>webSport</span>
+        <img src="/images/computer-network-business-networking-linkedin-prof-5afc2fe9bcb059.9775397715264767777729.png" alt="">
+            <div>
+                <label for="bank">select bank</label>
+                <select name="bank" id="bank" required>
+                   <option value="first bank">first bank</option>
+                   <option value="first bank">palmpay</option>
+                   <option value="first bank">opay</option>
+                   <option value="first bank">gtb bank</option>
+                   <option value="first bank">wema bank</option>
+                   <option value="first bank">heritage bank</option>
+                   <option value="first bank">access bank</option>
+                   <option value="first bank">uba bank</option>
+                   <option value="first bank">kuda bank</option>
+                </select>
+            </div>
+            <div>
+                <label for="amount">amount</label>
+               <input type="number" name="amount" id="amount" required>
+            </div>
+            <div>
+                <label for="acctno">your acct no</label>
+               <input type="text" name="acctno" id="acctno" required>
+            </div>
+            <div>
+                <label for="password">your password</label>
+               <input type="password" name="password" id="password" required>
+               <img src="/images/kisspng-eye-computer-icons-eye-pupil-5ad968a03ebf59.140752391524197536257.png" alt="" id="eye"  onclick="toggle()">
+            </div>
+            <div id="lagree">
+                <label for="agree" >I agree with the withdraw <policy_el onclick="addPolicy()">policy!</policy_el></label>
+               <input type="checkbox" id="agree" required>
+            </div>
+            <button id="withdrawBtn">withdraw</button>
+    </form>
+    
+</div>
+<div class="ul">
+    <ul>
+        <li>
+            Withdraw is process within a short period of time after placed
+        </li>
+        <li>
+            Reach out to custumer care for immediate help
+        </li>
+        <li>
+            All transactions are fully secured
+        </li>
+        <button onclick="showHistory()" id="histBtn">view history</button>
+    </ul>
+</div>
+
+    <withdraw_H class="withdrawal_history"><h5>withdrawal history</h5>
+        <history id="wdr_history">
+
+            
+        </history>
+        
+    </withdraw_H>
+<script src="/js/withdraw.js"></script>
+</body>
+</html>

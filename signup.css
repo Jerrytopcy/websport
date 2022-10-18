@@ -1,0 +1,355 @@
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'poppins', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .30s;
+}
+body{
+    background-image: url(/images/patterns.png);
+    background-color: rgb(249, 249, 249);
+    background-position: center;
+}
+#navup{
+    position: sticky;
+    width: 1.5rem;
+    background-color: rgb(214, 3, 116);
+    padding: .5rem;
+    border-radius: 50%;
+    top: 90%;
+    left: 95%;
+    box-shadow: 0px 2px 4px 1px rgb(101, 101, 101);
+    cursor: pointer;
+    transition: 1s ;
+    transform: rotateZ(0deg);
+}
+#navup:active{
+    background-color: rgb(33, 166, 0);
+    transition: .10s;
+    transform: rotateZ(-60deg);
+}
+#home{width: 4rem;
+    position: absolute;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .2rem;
+    font-weight: 500;
+    transition: .40s;
+    padding: .0rem .5rem .0rem .5rem;
+    font-size: .8rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+
+}
+#home:hover{
+    width: 4.5rem;
+    background-color: rgb(82, 135, 209);
+    transition: .40s;
+    
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row-reverse;
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+form img{
+    max-width: 3rem;
+    margin-top: -3rem;
+    
+   
+}
+
+.section2 img{
+    max-width: 31rem;
+    margin-top: -2rem;
+    border-radius: .4rem;
+    transition: .40s;  
+}
+
+
+form{
+   
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.753);
+   margin: 1rem;
+   box-shadow: -0.1px 2px 12px 0px rgba(140, 140, 140, 0.439);
+   border-radius: .3rem;
+}
+.contents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+select , input{
+    display: flex;
+    margin-bottom:1rem;
+    width: 18rem;
+    border: auto;
+    border-width: .1px;
+    border-style: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.849);
+    font-size: .7rem;
+    padding: .5rem;
+    border-radius: .3rem;
+    box-shadow: -0.2px 1.7px 2px 0px rgb(177, 177, 177);
+}
+
+ .select {
+    cursor: pointer;
+    text-transform: uppercase;
+    border-style: none;
+}
+.radio{
+    display: flex; 
+}
+.radio label{
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    margin-left: 1rem;
+    
+}
+.radio label input{
+box-shadow: none;
+}
+/* radio button */
+input[type="radio"]{
+    width: .8rem;
+    height: .8rem;
+    appearance: none;
+    cursor: pointer;
+}
+input[type="radio"]::before{
+    content: "";
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 0px 2px rgb(110, 110, 110);
+    border-radius: 50%;
+    transition: .20s;
+}
+input:checked[type="radio"]::before{
+    box-shadow: inset 0px 0px 0px 5px rgb(117, 1, 57);
+}
+/* radio button ends*/
+
+.contents h1{
+    display: flex;
+    flex-direction: row;
+    font-size: .75rem;
+    color: rgb(182, 3, 3);
+    width: 100%;
+    display: flex;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+label{
+font-size: .8rem;
+margin-bottom: .5rem;
+}
+
+
+
+button{
+    width: 7.3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: .8rem;
+    font-weight: 600;
+    color: brown;
+    border-radius: .3rem;
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -0.2px 1px 3px 0px rgb(140, 140, 140);
+    transition: .36s;
+    cursor: pointer;
+}
+
+
+
+
+button:hover{
+    font-weight: 430;
+    width:7.5rem;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    border-style: none;
+   
+   
+}
+
+::placeholder{
+    text-align: center;
+}
+.imgtext{
+    margin-top: -10rem;
+}
+.section2 .imgtext h2 span{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(143, 0, 0);
+    border-radius: .2rem;
+    padding: 0rem .3rem .1rem .3rem;
+}
+.section2 h2{
+    font-size: .8rem;
+    color: white;
+   
+    font-weight: 270;
+    
+}
+.section2{
+    text-align: center; 
+}
+
+.section2 h1 span{
+    font-size: 1.3rem;
+    color: rgb(176, 1, 1);
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+    padding: 0rem .3rem .1rem .3rem;
+    border-radius: .2rem;
+    
+}
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.btn-wrapper span{
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.btn-wrapper span a{
+    text-decoration: none;
+    box-shadow: -0.2px 1px 3px 0px rgb(177, 177, 177);
+    padding: .1rem .3rem .25rem .3rem;
+    color: rgb(176, 1, 1);
+    font-weight: 500;
+}
+reserve span{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    font-size: .5rem;
+    margin-top: 4rem;
+    gap: .5rem;
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+    padding-bottom:.5rem ;
+    padding-top: .5rem;
+}
+reserve span .made{
+    display: flex;
+    align-items: center;
+    font-size: .5rem;
+    font-weight: 600;
+    
+}
+reserve span .made img{
+    max-width: 2rem;
+    height: 1.6rem;
+    transition: .46s;
+}
+
+reserve span .made img:hover{
+    max-width: 7rem;
+    height: 2rem;
+    transition: .46s;
+}
+@media screen and (max-width: 55rem){
+    .section2 img{
+        max-width: 25rem; 
+        margin-top: -5rem;
+       
+    
+    }
+    #home{
+        margin-top: 0rem;
+        margin-left: -.5rem;
+    }
+  .container{
+display: flex;
+justify-content: center;
+flex-direction: column-reverse;
+  }  
+  form{ 
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+  .section2 h2{
+   font-size: .8rem;
+   font-weight: 300;
+   letter-spacing: .05rem;
+   border-radius: .8rem;
+   padding: .5rem .8rem;
+}
+
+select , input{
+    width: 10rem;
+    padding: .25rem;
+    border-radius: .3rem;
+}
+.radio label{
+    width: 4rem;
+   
+    /* flex-direction: column; */
+
+}
+
+}
+
+@media screen and (max-width: 28rem) {
+    #home{
+        margin-top: 0rem;
+        margin-left: -.5rem;
+    }
+  .container{
+display: flex;
+justify-content: center;
+flex-direction: column-reverse;
+  }  
+  form{ 
+    padding: 1rem;
+    margin-top: 6rem;
+}
+  .section2 img{
+    max-width: 18rem; 
+    margin-top: -5rem; 
+
+}
+  .section2 h2{
+   font-size: .8rem;
+   font-weight: 300;
+   letter-spacing: .05rem;
+   background-color: rgb(26, 101, 112);
+   position: absolute;
+   border-radius: .8rem;
+   padding: .5rem 0rem;
+  
+}
+
+select , input{
+    width: 10rem;
+    padding: .25rem;
+    border-radius: .3rem;
+}
+}

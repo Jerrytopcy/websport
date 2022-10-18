@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    transition: .56s;
+    scroll-behavior: smooth;
+}
+body{
+   
+    background-image: url(/images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+
+   
+  
+}
+
+/* header part */
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(242, 242, 242);
+    padding : .5rem 3rem .5rem 3rem;
+    border-bottom: solid #e5007e .2rem;
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.235);  
+}
+header a{
+    background-color: #ffffff;
+    padding: 0rem .3rem;
+    color: #e5007e;
+    border-radius: .3rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .95rem;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.234);
+    transition: .45s;
+}
+header a:hover{
+    background-color: #e5007e;
+    color: #fff;
+
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+header div p{
+    font-weight:600;
+    font-size: 1rem;
+}
+header div p wc{
+    background: rgb(229, 0, 126);
+    padding: 0rem .4rem 0rem .4rem;
+    color: white;
+    border-radius: .4rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin:.2rem
+
+}
+header jpg{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 500;
+    font-size: .9rem;
+    margin: .5rem;
+}
+header img{
+    width: 5rem; 
+}
+#topImg{
+    animation:animate 3s infinite alternate;
+
+}
+@keyframes animate{
+    0%{
+        transform: translateX(20%) rotate(-6deg);
+    }
+    50%{
+        transform: translateY(10%) rotate(4deg);
+    }
+}
+header #Plogo{
+    width: 2.8rem;
+}
+
+header form{
+    z-index: 999;
+    position: fixed;
+    left: 100%; top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .9rem;
+    padding: 1rem 1.4rem;
+    background-color: #f8f8f8;
+    color: #424242;
+    box-shadow: 0px 0px 8px 0px rgba(91, 91, 91, 0.371);
+    border-radius: 1rem;
+    font-size: .8rem;
+    transition: .60s;
+}
+.open_form{
+    left: 80%;
+    transition: .45s;
+}
+header form img{
+    align-self: center;
+    margin-top: -3rem;
+    max-width: 4rem;
+    
+
+}
+header form div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+header form input{
+    margin-top: -2rem;
+    border: none;
+    padding: .2rem .5rem;
+    border-radius: .3rem;
+    box-shadow: 0px 0px 4px 0px rgba(91, 91, 91, 0.371);
+}
+header form ok{
+    align-self: center;
+    font-weight: 700;
+    padding: 0rem 1rem;
+    border: none;
+    border-radius: .2rem;
+    color: #5c2782;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px 0px rgba(91, 91, 91, 0.371);
+    transition: .45s;
+    cursor: pointer;
+}
+header form ok:hover{
+    color: #ffffff;
+    background: #5c2782;
+}
+/* header part */
+
+
+
+/* banner part */
+.banner_div{
+    gap: 2rem;
+    margin: 3rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+.banner_div detail{
+    margin-top: 8rem;
+    max-width: 30rem;
+    font-size: .8rem;
+    
+}
+.banner_div detail h1{
+    color: #e5007e;
+}
+banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .45s;
+    justify-content: space-evenly;
+    
+}
+
+banner p{
+    display: none;
+}
+banner img{
+    max-width: 30rem;
+}
+
+
+
+banner watch{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10rem;
+    font-weight: 500;
+   
+}
+banner watch text{
+    color: #ffffff;
+    background: #5c2782;
+    margin-bottom: .3rem;
+    padding: 0rem .5rem;
+    border-radius: .3rem;
+}
+
+banner watch button{
+    padding: .1rem;
+    font-weight: 600;
+    font-size: .9rem;
+    color: #5c2782;
+    background-color: #fff;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .45s;
+
+}
+banner watch button:hover{
+    color: #ffffff;
+    background-color: #5c2782;
+}
+
+
+/* banner part */
+
+footer{
+    display: flex;
+    padding: 3rem;
+    margin: 3rem;
+    font-size: .8rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    transition: .45s;
+}
+
+
+footer span{
+    max-width: 40rem;
+    border-left: solid .4rem #e5007e;
+    padding-left: 1rem;
+}
+footer span top_span{
+    color: #e5007e;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: #e5007e solid .1rem;
+}
+
+@media screen and (max-width:77rem){
+    .open_form{
+        left: 69%;
+        transition: .45s;
+
+    }
+}
+@media screen and (max-width:55rem) {
+    header{
+        padding : .2rem 1rem ;  
+    }
+    header div p{
+       display: none;
+    }
+    header a{
+        font-size: .5rem;
+    }
+    .banner_div{
+        gap:0rem;
+        flex-direction: column;
+    }
+    header jpg{
+        gap: .5rem;
+        font-weight: 500;
+        font-size: .5rem;
+        margin: 0rem;
+    }
+    header jpg img, header div img{
+        width: 2rem; 
+    }
+    header #Plogo{
+        width: 1rem;
+    }
+    .banner_div detail{
+        
+        text-align: center;
+    }
+    .open_form{
+        left: 45%;
+        transition: .45s;
+    }
+    banner:hover{
+        transform: none;
+    }
+    banner p{
+        display: block;
+        margin-bottom:1rem;
+        margin-top:-1rem;
+        font-weight:600;
+        font-size: .5rem;
+    }
+    banner p wc{
+        background: rgb(229, 0, 126);
+        padding: 0rem .4rem 0rem .4rem;
+        color: white;
+        border-radius: .4rem;
+        font-weight: 400;
+        font-size: .6rem;
+    }
+    banner img{
+        max-width: 15rem;
+        
+    }
+    
+
+    banner watch{
+        
+        margin-top: -4rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+       
+        
+    }banner watch text{
+        margin-bottom: .3rem;
+        padding: 0rem .5rem;
+        border-radius: .3rem;
+        font-size: .6rem;
+    }
+    
+    banner watch button{
+        font-size: .5rem;
+        width: 4rem;
+        align-self: center;
+    }
+    banner watch button:hover{
+        width: 100%;
+    }
+    .banner_div detail{
+        margin-top: 1.2rem;
+        max-width: 15rem;
+        font-size: .6rem;
+        
+    }
+    .banner_div detail h1{
+        color: #e5007e;
+        font-size: 1.5rem;
+    }
+
+    header form{
+        gap: .3rem;
+        padding: 1rem 1.4rem;
+        font-size: .6rem; 
+    }
+   
+    header form img{
+        margin-top: -2rem;
+        max-width: 2rem;
+    }
+  
+    header form input{
+        max-width:7rem ;
+        margin-top: -2rem;
+        padding: .1rem .3rem;
+        
+    }
+    footer{
+        flex-direction: column;
+        
+    }
+    footer img{
+        margin-top: -4rem;
+       max-width: 15rem;
+       order: -1;
+    }
+    footer span{
+        font-size: .6rem;
+        margin-top: -3rem;
+        width: 15rem;
+       
+    }
+}
+
+
+
+
+

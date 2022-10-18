@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:poppins,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/patterns.png);
+    background-color: rgb(249, 249, 249);
+    justify-content: center;
+} 
+#home{
+    width: 4rem;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    margin-bottom: -3rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    text-align: center;
+    border-radius: .2rem;
+    font-weight: 500;
+    transition: .40s;
+    font-size: .8rem;
+
+}
+#home:hover{
+    width: 4.5rem;
+    background-color: rgb(82, 135, 209);
+    transition: .40s;
+}
+.container{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin: 3rem;
+}
+.container img{
+    max-width: 5rem;
+    margin-top: -3rem;
+    
+}
+form{
+    margin-top: 2rem;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius:.4rem ;
+    gap: 2rem;
+    box-shadow: 0px 6px 12px 1px rgba(140, 140, 140, 0.535);
+    padding: 0rem 3rem 2rem 3rem;
+    background-color: rgb(255, 255, 255);
+}
+#login{
+    font-weight: 800;
+    font-size: 1rem;
+    color: rgb(196, 0, 62);
+}
+form label{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: .4rem;
+    font-weight:400;
+    color: rgb(46, 46, 46);
+}
+.eyewrap{
+    width: 2rem;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#eye{
+    max-width: .8rem;
+    align-self: flex-end;
+    padding-top: 1rem;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: display .34s;
+}
+
+form label input{
+    outline: none;
+    border: none;
+    font-size:.85rem;
+    padding: .5rem 1.2rem .5rem 1.2rem;
+    box-shadow:-0.1px 1px 2px 0px rgb(140, 140, 140);
+    border-radius: .2rem;
+    color: rgb(41, 41, 41);
+    
+}
+button{
+    
+     width: 6rem;
+     padding: .5rem 1rem .5rem 1rem;
+     font-size: .8rem;
+     font-weight: 600;
+     color: rgb(255, 255, 255);
+     border-radius: .3rem;
+     border-style: none;
+     background-color: brown;
+     box-shadow: -0.2px 1px 1px 0px rgb(140, 140, 140);
+     transition: .36s;
+     cursor: pointer;
+    
+}
+button:hover{
+    background-color: rgb(82, 135, 209);
+    color: white;
+}
+login span{
+    color:rgb(82, 135, 209) ;
+}
+span a{
+    text-decoration: none;
+    color:brown ;
+    font-weight: 500;
+}
+
+
+reserve span{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    font-size: .5rem;
+    margin-top: 4rem;
+    gap: .5rem;
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+    padding-bottom:.5rem ;
+    padding-top: rem;
+}
+reserve span .made{
+    display: flex;
+    align-items: center;
+    font-size: .5rem;
+    font-weight: 600;
+    
+}
+reserve span .made img{
+    max-width: 2rem;
+    height: 1.6rem;
+    transition: .46s;
+}
+
+reserve span .made img:hover{
+    max-width: 7rem;
+    height: 2rem;
+    transition: .46s;
+}
+@media screen and (max-width:30rem) {
+ #span{
+    font-size: .6rem;
+
+ }   
+
+ reserve span{
+    gap: 0;
+}
+#home{
+    font-size: .6rem;
+    padding: .3rem;
+    margin-left: .2rem;
+}
+
+form{
+    width: 17rem;
+}
+}
